@@ -1,0 +1,50 @@
+1. Why MapReduce program is needed in Pig Programming?
+    * Pig is an abstraction over MapReduce. In other words, all Pig scripts internally are converted into Map and Reduce tasks to get the task done. 
+So Map reduce is the layer on top of which Pig is built. Moreover Map reduce is the means by which Hadoop can communicate with HDFS. 
+    * Pig’s programming language referred to as Pig Latin is a coding approach that provides high degree of abstraction for MapReduce 
+programming but is a procedural code not declarative. This is why MapReduce program is needed in Pig Programming.
+
+2. Advantages of Pig Latin over Map Reduce:
+    * Decrease in development time. This is the biggest advantage especially considering vanilla map-reduce jobs' complexity, time-spent 
+and maintenance of the programs.
+    * Coding is Highly reduced(number of lines of code is  1/20th  of that required in Map reduce) for example.
+    * Pig Latin provides all of the standard data-processing operations, such as join, filter,group by, order by, union, etc.
+    * Procedural, not declarative unlike SQL, so easier to follow the commands and provides better expressiveness in the transformation of 
+data every step. 
+    * Pig provides high-level language that can be used by:
+        • Data Analysts
+        • Data Scientists
+
+3. What is pig engine and what is its importance?
+    It acts as Interpreter between pig latin script and map reduce jobs.It creates environment to execute Pig scripts into series of map 
+reduce job in parallel manner.
+
+4. What are the modes of Pig execution?
+    There are 2 modes of pig execution
+    a. Local Mode
+    b. Map Reduce Mode
+Local Mode:
+    * In this mode, all the files are installed and run from your local host and local file system.
+    * This can be started by pig –x local
+MapReduce Mode:
+    * MapReduce mode is where we load or process the data that exists in the Hadoop File System (HDFS) using Apache Pig
+    * This can be started by pig –x mapreduce or by just Pig as Map reduce mode is the default mode
+
+5. What is grunt shell in Pig?
+    * Grunt shell is an interactive shell for running Pig Commands.
+    * It is used when script is not provided
+    * It has line editing facilities like other command line application
+    * It also  has a completion mechanism like eclipse which can be done by using TAB KEY
+      Eg:grunt > m=foreach a ge
+      And if we press the tab key grunt > m=foreach a generate will automatically completed
+      
+ 6. Features Of Pig Latin:
+    * Pig Latin is a dataflow language. Each processing step results in a new data set, or relation.
+    * Apache Pig is a high-level procedural language for querying large semi-structured datasets using Hadoop and the MapReduce Platform
+    * Pig provides an engine for executing data flows in parallel on Hadoop. It includes a language, Pig Latin, for expressing these data flows. 
+    * Pig Latin includes operators for many of the traditional data operations (join, sort, filter, etc.), as well as the ability for 
+users to develop their own functions for reading, processing, and writing data. 
+    * Pig runs on Hadoop. It makes use of both the Hadoop Distributed File System, HDFS, and Hadoop’s processing system, MapReduce.
+    * Pig simplifies the use of Hadoop by allowing SQL-like queries to a distributed dataset. 
+ 
+ 
